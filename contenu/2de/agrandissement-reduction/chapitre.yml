@@ -1,0 +1,59 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: agrandissement
+ordre: 60
+niveau: 2de
+motif: cube
+titre: Agrandissement et réduction
+objectif: >-
+  Déterminer les effets d'un agrandissement ou d'une réduction sur les longueurs, les aires et les volumes,
+  et calculer des longueurs à l'aide du théorème de Thalès.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, un exercice interactif.
+preparation:
+  - titre: J'associe des transformations à leur coefficient
+    lien: https://learningapps.org/display?v=pcekkabnt24
+
+etapes:
+  - id: etape-1
+    titre: Agrandir ou réduire des longueurs
+    resume: Le coefficient d'agrandissement ou de réduction multiplie toutes les longueurs.
+    motif: vecteurs-colineaires
+    activites: [a-photos]
+    retenir: [c-agrandissement, c-longueurs]
+    methodes: [m-coefficient]
+    exercices: [e-equations, e-coefficient]
+  - id: etape-2
+    titre: Utiliser le théorème de Thalès
+    resume: Calculer une longueur dans deux triangles semblables.
+    motif: vecteur-norme
+    activites: [a-triangles]
+    retenir: c-thales
+    exercices: [e-thales]
+  - id: etape-3
+    titre: Effet sur les aires
+    resume: Quand les longueurs sont multipliées par k, les aires sont multipliées par k².
+    motif: somme
+    activites: [a-pizzas]
+    retenir: c-aires
+    methodes: [m-aire-disque]
+    exercices: [e-aires]
+  - id: etape-4
+    titre: Effet sur les volumes
+    resume: Quand les longueurs sont multipliées par k, les volumes sont multipliés par k³.
+    motif: cube
+    activites: [a-panettones]
+    retenir: c-volumes
+    methodes: [m-volume-cylindre]
+    exercices: [e-volumes]
+
+memo:
+  connaissances: [c-agrandissement, c-longueurs, c-thales, c-aires, c-volumes]
+  methodes: [m-coefficient, m-aire-disque, m-volume-cylindre]
+
+problemes: [p-arc-triomphe, p-toiture, p-statue-liberte, p-pyramide, p-verrine]
+evaluations: [v-flacons, v-puits]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

@@ -287,6 +287,14 @@ function construireChapitre(niveau, slug) {
   const html = ctx.html;
   const V = id => `${code}-${id}`;
   const etapes = chapitre.etapes;
+  // rubriques facultatives (certains chapitres n'ont ni mémo, ni évaluation)
+  chapitre.memo = chapitre.memo || {};
+  chapitre.memo.connaissances = chapitre.memo.connaissances || [];
+  chapitre.memo.methodes = chapitre.memo.methodes || [];
+  chapitre.problemes = chapitre.problemes || [];
+  chapitre.evaluations = chapitre.evaluations || [];
+  const aMemo = chapitre.memo.connaissances.length + chapitre.memo.methodes.length > 0;
+  const aEval = chapitre.evaluations.length > 0;
   const ou = {};
   etapes.forEach((e, n) => (e.exercices || []).forEach(x => (ou[x] = n + 1)));
   const tousExercices = etapes.flatMap(e => e.exercices || []);
@@ -344,9 +352,9 @@ function construireChapitre(niveau, slug) {
       </ol>
     </section>
     <section class="raccourcis">
-      ${lien('memo', `${ic('memo')}<span><strong>Mémo</strong><span>${chapitre.memo.connaissances.length} fiches connaissances, ${chapitre.memo.methodes.length} fiches méthode</span></span>`, 'raccourci')}
+      ${aMemo ? lien('memo', `${ic('memo')}<span><strong>Mémo</strong><span>${[chapitre.memo.connaissances.length && `${chapitre.memo.connaissances.length} fiche${chapitre.memo.connaissances.length > 1 ? 's' : ''} connaissance${chapitre.memo.connaissances.length > 1 ? 's' : ''}`, chapitre.memo.methodes.length && `${chapitre.memo.methodes.length} fiche${chapitre.memo.methodes.length > 1 ? 's' : ''} méthode`].filter(Boolean).join(', ')}</span></span>`, 'raccourci') : ''}
       ${lien('entrainement', `${ic('exercice')}<span><strong>Je m'entraîne</strong><span>${tousExercices.length} exercices, ${chapitre.problemes.length} problèmes${(chapitre.programmes || []).length ? `, ${chapitre.programmes.length} programme` : ''}</span></span>`, 'raccourci')}
-      ${lien('evaluation', `${ic('evaluation')}<span><strong>Je m'évalue</strong><span>${chapitre.evaluations.length} sujet${chapitre.evaluations.length > 1 ? 's' : ''}</span></span>`, 'raccourci')}
+      ${aEval ? lien('evaluation', `${ic('evaluation')}<span><strong>Je m'évalue</strong><span>${chapitre.evaluations.length} sujet${chapitre.evaluations.length > 1 ? 's' : ''}</span></span>`, 'raccourci') : ''}
     </section>`);
 
   vue('preparation', 'preparation', 'Je me prépare', `
@@ -382,12 +390,12 @@ function construireChapitre(niveau, slug) {
   });
 
   const memoFiche = (id, type) => `<article class="fiche fiche-${type}" id="${V('fiche-' + id)}"><div class="bloc-tete">${puce(type, type === 'methode' ? `Méthode${fiches[id].outil ? ` · ${esc(fiches[id].outil)}` : ''}` : 'Connaissance')}<h3>${esc(fiches[id].titre)}</h3></div>${html(id)}</article>`;
-  vue('memo', 'memo', 'Mémo', `
+  if (aMemo) vue('memo', 'memo', 'Mémo', `
     <header class="entete-vue"><p class="surtitre">Toutes les fiches du chapitre</p><h1>Mémo</h1>
     <p class="chapeau">Les connaissances et les méthodes à garder sous la main, réunies au même endroit.</p>
     <div class="sommaire-local">${[...chapitre.memo.connaissances, ...chapitre.memo.methodes].map(id => `<button type="button" data-ancre="${V('fiche-' + id)}">${esc(fiches[id].titre)}</button>`).join('')}</div></header>
-    <section><h2 class="titre-section">Connaissances</h2>${chapitre.memo.connaissances.map(id => memoFiche(id, 'connaissance')).join('')}</section>
-    <section><h2 class="titre-section">Méthodes</h2>${chapitre.memo.methodes.map(id => memoFiche(id, 'methode')).join('')}</section>`);
+    ${chapitre.memo.connaissances.length ? `<section><h2 class="titre-section">Connaissances</h2>${chapitre.memo.connaissances.map(id => memoFiche(id, 'connaissance')).join('')}</section>` : ''}
+    ${chapitre.memo.methodes.length ? `<section><h2 class="titre-section">Méthodes</h2>${chapitre.memo.methodes.map(id => memoFiche(id, 'methode')).join('')}</section>` : ''}`);
 
   const resume = p => {
     const debut = p.corps.split('\n').find(l => l.trim() && !/^[!:|#`-]/.test(l.trim())) || '';
@@ -415,7 +423,7 @@ function construireChapitre(niveau, slug) {
       ${p.video ? `<section class="plus-loin"><h2 class="titre-section">Pour aller plus loin</h2><div class="videos">${video({ video: p.video, titre: p.video_titre, image: p.video_image })}</div></section>` : ''}`);
   });
 
-  vue('evaluation', 'evaluation', "Je m'évalue", `
+  if (aEval) vue('evaluation', 'evaluation', "Je m'évalue", `
     <header class="entete-vue"><p class="surtitre">Sujets d'évaluation</p><h1>Je m'évalue</h1>
     <p class="chapeau">Pour faire le point sur tout le chapitre.</p></header>
     <div class="cartes-pb">${chapitre.evaluations.map(id => lien(id, `<span class="carte-pb-tete"><span class="puce puce-evaluation">${ic('evaluation')}Évaluation</span></span><span class="carte-pb-titre">${esc(fiches[id].titre)}</span><span class="carte-pb-resume">${fiches[id].grille ? 'Sujet organisé par compétences, avec sa grille.' : resume(fiches[id])}</span>`, 'carte-pb carte-eval')).join('')}</div>`);
@@ -453,7 +461,7 @@ function construireChapitre(niveau, slug) {
     ${grillesHtml}
     ${(chapitre.enseignant?.a_completer || []).length ? `<section class="bloc-prof"><h2 class="titre-section">À vérifier ou compléter</h2><ul class="liste-prof">${chapitre.enseignant.a_completer.map(t => `<li>${esc(t)}</li>`).join('')}</ul></section>` : ''}`);
 
-  return { chapitre, code, vues, ctx, nomNiveau, slug, niveau, etapes, V };
+  return { chapitre, code, vues, ctx, nomNiveau, slug, niveau, etapes, V, aMemo, aEval };
 }
 
 // ---------- Boîte à outils (contenu/outils) ----------
@@ -499,7 +507,7 @@ function page(chapitres, outils) {
   const css = lire(path.join(RACINE, 'gabarit', 'style.css'));
   const js = lire(path.join(RACINE, 'gabarit', 'app.js'));
   const navLien = (id, contenu, cls = '') => `<a href="#${id}" data-go="${id}" class="nav-lien ${cls}">${contenu}</a>`;
-  const menus = chapitres.map(({ chapitre, code, etapes, V, nomNiveau }) => `
+  const menus = chapitres.map(({ chapitre, code, etapes, V, nomNiveau, aMemo, aEval }) => `
   <div class="menu-chapitre" data-chapitre="${code}">
     <p class="menu-titre">${esc(nomNiveau)}<strong>${esc(chapitre.titre)}</strong></p>
     ${navLien(V('accueil'), `${ic('maison')}<span>Accueil du chapitre</span>`)}
@@ -507,9 +515,9 @@ function page(chapitres, outils) {
     ${navLien(V('preparation'), `<span class="nav-num">0</span><span>Je me prépare</span><span class="nav-etat" data-etat="${V('preparation')}">${ic('coche')}</span>`)}
     ${etapes.map((e, n) => navLien(V(e.id), `<span class="nav-num">${n + 1}</span><span>${esc(e.titre)}</span><span class="nav-etat" data-etat="${V(e.id)}">${ic('coche')}</span>`)).join('')}
     <p class="menu-groupe">Pour réviser et s'entraîner</p>
-    ${navLien(V('memo'), `${ic('memo')}<span>Mémo</span>`)}
+    ${aMemo ? navLien(V('memo'), `${ic('memo')}<span>Mémo</span>`) : ''}
     ${navLien(V('entrainement'), `${ic('exercice')}<span>Je m'entraîne</span>`)}
-    ${navLien(V('evaluation'), `${ic('evaluation')}<span>Je m'évalue</span>`)}
+    ${aEval ? navLien(V('evaluation'), `${ic('evaluation')}<span>Je m'évalue</span>`) : ''}
     <p class="menu-groupe">Enseignants</p>
     ${navLien(V('enseignant'), `${ic('prof')}<span>Espace enseignant</span>`)}
   </div>`).join('') + (outils ? `
@@ -593,7 +601,7 @@ function page(chapitres, outils) {
 }
 
 // « groupement B » au singulier, « groupements A, B et C » au pluriel
-const grp = g => `${/[, ]et |,/.test(String(g)) ? 'groupements' : 'groupement'} ${esc(g)}`;
+const grp = g => g ? `${/[, ]et |,/.test(String(g)) ? 'groupements' : 'groupement'} ${esc(g)}` : 'tous groupements';
 // ---------- Construction ----------
 fs.rmSync(SORTIE, { recursive: true, force: true });
 fs.mkdirSync(SORTIE, { recursive: true });
@@ -612,7 +620,8 @@ for (const niveau of fs.readdirSync(CONTENU).sort()) {
 }
 const outils = args.tout || oui(REGLAGES.boite_a_outils) ? construireOutils() : null;
 // Ordre des chapitres : clé « ordre » du chapitre.yml, sinon ordre alphabétique du dossier.
-chapitres.sort((a, b) => a.niveau.localeCompare(b.niveau) || (a.chapitre.ordre ?? 99) - (b.chapitre.ordre ?? 99) || a.slug.localeCompare(b.slug));
+const RANG_NIVEAU = n => Object.keys(NIVEAUX).indexOf(n);
+chapitres.sort((a, b) => RANG_NIVEAU(a.chapitre.niveau) - RANG_NIVEAU(b.chapitre.niveau) || a.niveau.localeCompare(b.niveau) || (a.chapitre.ordre ?? 99) - (b.chapitre.ordre ?? 99) || a.slug.localeCompare(b.slug));
 fs.writeFileSync(path.join(SORTIE, 'index.html'), page(chapitres, outils));
 const publies = [];
 for (const c of [...(outils ? [outils] : []), ...chapitres]) {

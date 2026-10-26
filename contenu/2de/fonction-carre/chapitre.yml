@@ -1,0 +1,37 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: carre
+ordre: 30
+niveau: 2de
+motif: quadratique
+titre: Fonction carré et opérations sur les fonctions
+objectif: >-
+  Construire et exploiter la parabole de la fonction carré, puis en déduire les courbes et les variations
+  des fonctions x ↦ kx² et x ↦ f(x) + k.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, un exercice interactif.
+preparation:
+  - titre: Je reconnais les représentations graphiques
+    lien: https://learningapps.org/display?v=pra14qii324
+
+etapes:
+  - id: etape-1
+    titre: Étudier la fonction carré
+    resume: La parabole, son sommet et le tableau de variations de la fonction carré.
+    motif: quadratique
+    activites: [a-chute]
+    exercices: [e-variations, e-valeurs, e-resoudre]
+  - id: etape-2
+    titre: Multiplier la fonction carré par un nombre
+    resume: Effet d’un coefficient multiplicateur et d'une constante ajoutée sur la courbe et les variations.
+    motif: cube-extremums
+    activites: [a-distance-arret]
+    exercices: [e-geogebra, e-trajectoire]
+
+problemes: [p-skate, p-pompe, p-photovoltaique, p-distributeur]
+programmes: [g-images, g-arche]
+evaluations: [v-multiple, v-deux-fonctions, v-velo, v-tower-bridge]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

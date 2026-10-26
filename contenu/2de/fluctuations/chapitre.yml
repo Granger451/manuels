@@ -1,0 +1,51 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: fluctuations
+ordre: 50
+niveau: 2de
+motif: arbre
+titre: Fluctuations et probabilités
+objectif: >-
+  Calculer des probabilités simples à l'aide de tableaux ou d'arbres, simuler des expériences aléatoires
+  au tableur et observer la stabilisation des fréquences quand la taille de l'échantillon augmente.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, un exercice interactif.
+preparation:
+  - titre: Je calcule des probabilités simples
+    lien: https://learningapps.org/display?v=p8qgtg8av24
+
+etapes:
+  - id: etape-1
+    titre: Calculer des probabilités simples
+    resume: Vocabulaire des probabilités, tableaux à double entrée et arbres.
+    motif: arbre
+    activites: [a-enquete, a-sandwich]
+    retenir: c-vocabulaire
+    methodes: [m-probabilite]
+    exercices: [e-probabilite, e-roue, e-arbre, e-tableau]
+  - id: etape-2
+    titre: Observer la stabilisation des fréquences
+    resume: La fréquence fluctue d'un échantillon à l'autre, puis se stabilise autour de la probabilité.
+    motif: arbre-totales
+    activites: [a-pile-ou-face]
+    retenir: [c-fluctuation, c-stabilisation]
+    exercices: [e-frequence]
+  - id: etape-3
+    titre: Réaliser des simulations
+    resume: Simuler une expérience aléatoire avec un tableur.
+    motif: arbre-independance
+    activites: [a-jeu-de]
+    methodes: [m-simulation]
+    exercices: [e-simulation]
+
+memo:
+  connaissances: [c-vocabulaire, c-fluctuation, c-stabilisation]
+  methodes: [m-probabilite, m-simulation]
+
+problemes: [p-famille, p-pari, p-jury, p-casino]
+programmes: [g-controle-qualite]
+evaluations: [v-fille-garcon, v-yeux-bleus]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

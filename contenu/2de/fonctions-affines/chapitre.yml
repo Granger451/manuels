@@ -1,0 +1,49 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: affine
+ordre: 20
+niveau: 2de
+motif: affine
+titre: Fonction linéaire et fonction affine
+objectif: >-
+  Reconnaître et représenter une fonction linéaire ou affine, relier le signe du coefficient directeur
+  au sens de variation et déterminer l'équation réduite d'une droite à partir de deux points.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, deux exercices interactifs.
+preparation:
+  - titre: Je reconnais la représentation graphique d'une fonction linéaire et affine
+    lien: https://learningapps.org/display?v=pvsfaqi7224
+  - titre: Je reconnais l'expression algébrique d'une fonction linéaire et affine
+    lien: https://learningapps.org/display?v=ps6agib6224
+
+etapes:
+  - id: etape-1
+    titre: Reconnaître une fonction linéaire ou affine
+    resume: Expression algébrique, représentation graphique, images et antécédents.
+    motif: affine
+    retenir: [c-expressions, c-courbes]
+    exercices: [e-associer, e-images]
+  - id: etape-2
+    titre: Sens de variation
+    resume: Le signe du coefficient directeur donne le sens de variation.
+    motif: somme
+    retenir: [c-variations, c-synthese]
+    exercices: [e-geogebra]
+  - id: etape-3
+    titre: Équation réduite d'une droite
+    resume: Calculer le coefficient directeur et l'ordonnée à l'origine à partir de deux points.
+    motif: derivee
+    activites: [a-thermos]
+    methodes: [m-equation-droite]
+    exercices: [e-equations-droites]
+
+memo:
+  connaissances: [c-expressions, c-courbes, c-variations, c-synthese]
+  methodes: [m-equation-droite]
+
+problemes: [p-pile, p-conductance, p-eolien, p-ressort, p-isolation]
+programmes: [g-coefficients]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

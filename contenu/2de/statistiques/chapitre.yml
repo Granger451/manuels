@@ -1,0 +1,55 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: stats2nde
+ordre: 40
+niveau: 2de
+motif: amortissement
+titre: Calculs statistiques
+objectif: >-
+  Comparer et interpréter des séries statistiques à l'aide d'indicateurs de position et de dispersion,
+  calculés à la main, à la calculatrice ou au tableur, et de diagrammes en boîte à moustaches.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, deux exercices interactifs et une investigation.
+preparation:
+  - titre: Je revois le vocabulaire statistique
+    lien: https://learningapps.org/display?v=pnf8vic7a24
+  - titre: Je calcule la moyenne d'une série statistique
+    lien: https://learningapps.org/display?v=pkb37ak5n24
+  - fiche: prep-investigation
+
+etapes:
+  - id: etape-1
+    titre: Calculer des indicateurs de position
+    resume: Moyenne, médiane et quartiles d'une série statistique.
+    motif: somme
+    activites: [a-distance-lycee, a-temperatures, a-saut-hauteur]
+    retenir: c-position
+    methodes: [m-moyenne, m-mediane, m-quartiles]
+    exercices: [e-interactif, e-mediane, e-moyenne-etendue, e-quartiles-impair, e-quartiles-pair, e-examens, e-club-lecture, e-classes]
+  - id: etape-2
+    titre: Calculer des indicateurs de dispersion
+    resume: Étendue, écart type et écart interquartile, à la calculatrice ou au tableur.
+    motif: amortissement
+    activites: [a-defis-culinaires, a-notes-tableur]
+    retenir: c-dispersion
+    exercices: [e-salaires]
+  - id: etape-3
+    titre: Interpréter et construire un diagramme en boîte
+    resume: Lire, construire et comparer des diagrammes en boîte à moustaches.
+    motif: cube
+    activites: [a-site-internet]
+    retenir: c-boite
+    methodes: [m-boite]
+    exercices: [e-lire-boite]
+
+memo:
+  connaissances: [c-position, c-dispersion, c-boite]
+  methodes: [m-moyenne, m-mediane, m-quartiles, m-boite]
+
+problemes: [p-poissons, p-calories, p-populations, p-pollution, p-elections]
+programmes: [g-ventes]
+evaluations: [v-controle-qualite, v-delais-livraison]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

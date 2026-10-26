@@ -1,0 +1,38 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: generalites
+ordre: 10
+niveau: 2de
+motif: cube-extremums
+titre: Généralités sur les fonctions
+objectif: >-
+  Passer d'un mode de représentation d'une fonction à un autre (formule, tableau, courbe) et lire sur une courbe
+  les images, les antécédents, les variations et les extremums.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, un quiz de révision.
+preparation:
+  - titre: Quiz de révision
+    lien: https://learningapps.org/display?v=p05dzsifa24
+
+etapes:
+  - id: etape-1
+    titre: Exploiter différents modes de représentation
+    resume: Une formule, un tableau de valeurs et une courbe pour décrire la même situation.
+    motif: affine
+    activites: [a-recuperateur]
+    exercices: [e-associer-courbes, e-etude-courbe]
+  - id: etape-2
+    titre: Étudier la courbe représentative d'une fonction
+    resume: Lire les variations et les extremums d'une fonction sur sa courbe.
+    motif: cube-extremums
+    activites: [a-consommation, a-tour-de-france]
+    exercices: [e-niveau-sonore, e-tableau-variations, e-moto]
+
+memo:
+  connaissances: []
+
+problemes: [p-puits-canadien, p-efficacite-lumineuse]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.
