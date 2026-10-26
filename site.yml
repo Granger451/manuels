@@ -1,0 +1,8 @@
+# Réglages du site
+# Pour publier un manuel : mettre « oui » devant son niveau, puis relancer la construction.
+# Un chapitre seul peut aussi être caché avec « publie: non » dans son chapitre.yml.
+publie:
+  2de: oui
+  1re: oui
+  Tle: non
+boite_a_outils: oui

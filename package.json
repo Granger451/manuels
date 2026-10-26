@@ -1,0 +1,17 @@
+{
+  "name": "manuel-maths-pro",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Manuel de mathématiques pour le lycée professionnel, généré à partir de fichiers Markdown.",
+  "scripts": {
+    "build": "node build.mjs --cible forge",
+    "apercu": "node build.mjs --cible artifact"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "katex": "^0.16.11",
+    "markdown-it": "^14.1.0",
+    "markdown-it-container": "^4.0.0"
+  }
+}

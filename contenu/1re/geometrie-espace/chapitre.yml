@@ -1,0 +1,50 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: espace
+ordre: 60
+niveau: 1re
+motif: vecteur
+titre: Géométrie dans l'espace
+groupements: A, B et C
+objectif: >-
+  Développer la vision dans l'espace à partir de solides connus, et réaliser la section d'un solide usuel
+  par un plan à l'aide d'un outil numérique.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, trois exercices interactifs sur les solides et des conversions de volumes.
+preparation:
+  - titre: Je reconnais des solides usuels
+    lien: https://learningapps.org/display?v=pwe1rz6yn25
+  - titre: J'identifie le solide usuel auquel correspond l'objet
+    lien: https://learningapps.org/display?v=p4t2nokkt25
+  - titre: J'associe solide et volume
+    lien: https://learningapps.org/32715889
+  - fiche: prep-conversions
+
+etapes:
+  - id: etape-1
+    titre: Représenter un solide usuel avec un logiciel
+    resume: Reconnaître les solides, calculer leurs volumes et les construire avec GeoGebra 3D.
+    motif: vecteur
+    activites: [a-shampoing]
+    retenir: c-solides
+    exercices: [e-caracteristiques, e-vie-quotidienne, e-patrons, e-jeu-de-paires, e-volumes]
+  - id: etape-2
+    titre: Réaliser la section d'un solide par un plan
+    resume: Couper un solide par un plan avec GeoGebra 3D, puis calculer avec Pythagore ou Thalès.
+    motif: vecteur-norme
+    activites: [a-tapis, a-temple]
+    retenir: [c-section-plane, r-section-pave, r-section-pyramide]
+    methodes: [m-section-geogebra]
+    exercices: [e-pythagore-cube, e-aquarium]
+
+memo:
+  connaissances: [c-solides, c-section-plane, c-pythagore, c-volume-pave, c-volume-cylindre]
+  methodes: [m-section-geogebra]
+
+problemes: [p-maison, p-piece, p-silo, p-vanne]
+programmes: [g-volumes, g-escalier]
+evaluations: [v-piscine, v-pot]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

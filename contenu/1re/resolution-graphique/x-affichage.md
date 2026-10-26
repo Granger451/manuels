@@ -1,0 +1,9 @@
+---
+titre: "Le programme complété"
+type: "aide"
+---
+
+Voici le programme complété :
+
+::: ouvrir https://console.basthon.fr/?script=eJxlkVFKAzEQht8DucPQPtgilta-la2g-OKb4AnibmYbyGa3SVYj6rvexJ6jN_EkzmyWChoIJH_-me9Pgr5toFFxB6bpWh8h7H2UQoop3B4PaJyJpnVQ6UCzT4CtK1kJUlQaAWdpvpECaHgde--G-lmCc1jNuQ2b6n-mlAn3yqvm-BU9d-_hUVn1omotRYItLKXoVODF4lIKSkLLda570L2x0LW9h5KimOp48NrDvtdDIPj-_BigUoTByT2Wq1x7M0LoOmDPjIvaPylrCfq8M1ZDgmILRBsDI0fBoRdva97Wp21lEPk8wQUdMYDVKdy5kCOZ0hBFIZpyx1CKWw0v6rTNZoO5SwHLEcmj85QMZhMmF8ybZGJ2aBv0X3P2XmUv_Ea5PrH5wur0gfk8l-KEr_WaNosVvsNbfkQSkJT1oNSjUo_KGGfMQ9-9BfosKX4A15-j0A
+:::

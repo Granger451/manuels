@@ -1,0 +1,54 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: resolution
+ordre: 80
+niveau: 1re
+motif: affine
+titre: Résolution graphique d'équations et d'inéquations
+groupements: A, B et C
+objectif: >-
+  Comparer l'évolution de deux phénomènes à l'aide de fonctions et déterminer le moment où l'un prend
+  le dessus sur l'autre : l'égalité marque le point d'équilibre, l'inégalité traduit un dépassement.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, deux exercices interactifs.
+preparation:
+  - titre: Je compare des nombres
+    lien: https://learningapps.org/41037725
+  - titre: Je trouve le ou les points d'intersection de deux fonctions
+    lien: https://learningapps.org/display?v=pybqqagrt25
+
+etapes:
+  - id: etape-1
+    titre: Exploiter une représentation graphique
+    resume: Rappels avec la calculatrice — tracer une courbe, lire des images, trouver un maximum.
+    motif: quadratique
+    activites: [a-reservoir]
+    methodes: [m-tracer-numworks, m-images-numworks, m-extremum-numworks]
+  - id: etape-2
+    titre: Résoudre une équation f(x) = g(x)
+    resume: Les abscisses des points d'intersection des deux courbes.
+    motif: cube
+    activites: [a-chauffage]
+    retenir: c-equation
+    methodes: [m-intersection-numworks]
+    exercices: [e-equation-graphique, e-equations, e-modeliser]
+  - id: etape-3
+    titre: Résoudre une inéquation f(x) < g(x)
+    resume: Les intervalles où une courbe est en dessous de l'autre.
+    motif: affine
+    activites: [a-atelier]
+    retenir: c-inequation
+    methodes: [m-tracer-geogebra, m-intersection-geogebra, m-inequation-graphique]
+    exercices: [e-inequation-graphique, e-inequations]
+
+memo:
+  connaissances: [c-equation, c-inequation]
+  methodes: [m-tracer-numworks, m-images-numworks, m-extremum-numworks, m-intersection-numworks, m-tracer-geogebra, m-intersection-geogebra, m-inequation-graphique]
+
+problemes: [p-cinema, p-voitures, p-temperatures, p-placement, p-arbres, p-voyage]
+programmes: [g-affichage, g-balayage]
+evaluations: [v-coffrets, v-smoothies]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

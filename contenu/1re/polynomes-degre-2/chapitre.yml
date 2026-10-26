@@ -1,0 +1,65 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: poly2
+ordre: 20
+niveau: 1re
+motif: quadratique
+titre: Fonctions polynômes de degré 2
+groupements: A, B et C
+objectif: >-
+  Découvrir les fonctions polynômes de degré 2, leur parabole, leurs racines, leur forme factorisée,
+  et étudier leur signe.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, deux rappels sur la fonction carré et trois exercices interactifs.
+preparation:
+  - fiche: prep-fonction-carre
+  - fiche: prep-variations-carre
+  - titre: Je révise mes connaissances sur les fonctions
+    lien: https://learningapps.org/display?v=p05dzsifa24
+  - titre: Je calcule l'image d'un nombre par une fonction
+    lien: https://learningapps.org/display?v=pndkzgs3t25
+  - titre: Je résous des équations du premier degré
+    lien: https://learningapps.org/display?v=pn5ois0b225
+
+etapes:
+  - id: etape-1
+    titre: Prévoir les variations
+    resume: Le signe du coefficient a dit si la parabole est tournée vers le haut ou vers le bas.
+    motif: quadratique
+    activites: [a-moto]
+    retenir: [c-variations, c-parabole]
+    exercices: [e-reconnaitre, e-representer, e-tableau-variations, e-associer-courbes]
+  - id: etape-2
+    titre: Déterminer le nombre de racines
+    resume: Deux, une ou aucune, selon le nombre de points où la parabole coupe l'axe des abscisses.
+    motif: cube
+    activites: [a-theatre]
+    retenir: c-racines
+    methodes: [m-racines-numworks]
+    exercices: [e-racines, e-resoudre-graphiquement]
+  - id: etape-3
+    titre: Déterminer le signe
+    resume: Entre les racines, le polynôme est du signe de −a, à l'extérieur du signe de a.
+    motif: derivee
+    activites: [a-panneaux]
+    retenir: c-signe
+    exercices: [e-signe, e-caracteristiques]
+  - id: etape-4
+    titre: Factoriser un polynôme
+    resume: Écrire a(x − x₁)(x − x₂) à partir des racines, en s'aidant de la symétrie de la parabole.
+    motif: affine
+    activites: [a-restaurant]
+    retenir: c-forme-factorisee
+    exercices: [e-factoriser, e-deuxieme-racine]
+
+memo:
+  connaissances: [c-variations, c-parabole, c-racines, c-signe, c-forme-factorisee]
+  methodes: [m-racines-numworks, m-equation-produit, m-equation-numworks, m-sommet-developpee, m-sommet-factorisee]
+
+problemes: [p-distance-arret, p-parterre, p-sydney, p-benefice]
+programmes: [g-tableaux-valeurs, g-racines-approchees]
+evaluations: [v-salon, v-ble]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

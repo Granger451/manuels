@@ -1,0 +1,57 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: vecteurs
+ordre: 120
+niveau: 1re
+motif: vecteur
+titre: Vecteurs du plan
+groupements: A et B
+objectif: >-
+  Introduire les vecteurs du plan, éventuellement muni d'un repère orthogonal, comme outil pour étudier
+  des problèmes issus des mathématiques ou des autres disciplines, en particulier de la physique.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, trois exercices interactifs.
+preparation:
+  - titre: Je repère des éléments sur un graphique
+    lien: https://learningapps.org/display?v=pzmnzrsik25
+  - titre: Je lis les coordonnées d'un point
+    lien: https://learningapps.org/display?v=pbi8q91qk25
+  - titre: Je repère l'image d'un point par translation
+    lien: https://learningapps.org/display?v=p3mv5e0d525
+
+etapes:
+  - id: etape-1
+    titre: Reconnaître des vecteurs
+    resume: Direction, sens et norme ; vecteurs égaux, opposés, colinéaires.
+    motif: vecteur
+    activites: [a-suspension]
+    retenir: c-vecteurs
+    methodes: [m-geogebra-vecteur]
+    exercices: [e-caracteristiques, e-construire, e-egaux-opposes]
+  - id: etape-2
+    titre: Construire des vecteurs
+    resume: Additionner deux vecteurs, multiplier un vecteur par un nombre réel.
+    motif: fresnel
+    activites: [a-monte-charge]
+    retenir: [c-somme, c-produit]
+    methodes: [m-geogebra-representant, m-geogebra-somme, m-geogebra-produit]
+    exercices: [e-somme, e-produit]
+  - id: etape-3
+    titre: Coordonnées et norme d'un vecteur
+    resume: Lire et calculer les coordonnées d'un vecteur, puis sa longueur.
+    motif: affine
+    activites: [a-livraison]
+    retenir: [c-coordonnees, c-coordonnees-somme, c-norme]
+    exercices: [e-coordonnees-graphique, e-representer, e-norme, e-norme-points, e-norme-coordonnees, e-triangle, e-somme-norme]
+
+memo:
+  connaissances: [c-vecteurs, c-somme, c-produit, c-representer, c-coordonnees, c-coordonnees-somme, c-norme]
+  methodes: [m-geogebra-vecteur, m-geogebra-representant, m-geogebra-somme, m-geogebra-produit]
+
+problemes: [p-chantier, p-parachute, p-avion]
+programmes: [g-surveillance]
+evaluations: [v-drone]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

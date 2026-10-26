@@ -1,0 +1,65 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: statistique
+ordre: 90
+niveau: 1re
+motif: affine
+titre: Statistique à deux variables
+groupements: A, B et C
+objectif: >-
+  Étudier la relation entre deux grandeurs mesurées, comme le temps de travail et le salaire ou l'âge d'un appareil
+  et sa consommation, pour repérer une tendance, la résumer par une droite et faire des prévisions.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, trois exercices interactifs.
+preparation:
+  - titre: Je reconnais des fonctions affines et linéaires
+    lien: https://learningapps.org/40409280
+  - titre: Je calcule l'image d'une valeur par une fonction affine
+    lien: https://learningapps.org/40409359
+  - titre: Je revois les différents indicateurs statistiques
+    lien: https://learningapps.org/40425772
+
+etapes:
+  - id: etape-1
+    titre: Réaliser une régression avec NumWorks
+    resume: Le nuage de points, la droite de régression et une première prédiction à la calculatrice.
+    motif: affine
+    activites: [a-tabac]
+    retenir: r-droite
+    methodes: [m-nuage-numworks, m-droite-numworks, m-prediction-numworks]
+    exercices: [e-prediction-numworks, e-prediction-equation]
+  - id: etape-2
+    titre: Réaliser une régression avec un tableur
+    resume: La courbe de tendance et son équation, pour prédire une valeur.
+    motif: amortissement
+    activites: [a-climat]
+    retenir: r-prediction
+    methodes: [m-regression-excel]
+    exercices: [e-prediction-excel]
+  - id: etape-3
+    titre: Déterminer le coefficient de détermination
+    resume: Le R², pour mesurer si la droite résume bien la série.
+    motif: somme
+    activites: [a-penaltys]
+    retenir: r-r2
+    methodes: [m-r2-numworks, m-r2-excel]
+    exercices: [e-determiner-r2, e-interpreter-r2, e-associer-r2]
+  - id: etape-4
+    titre: Faire preuve d'esprit critique
+    resume: Un R² élevé ne garantit pas une bonne prédiction.
+    motif: sinus
+    activites: [a-meteo]
+    retenir: r-fiabilite
+    exercices: [e-pertinence]
+
+memo:
+  connaissances: [c-deux-variables, c-droite, c-r2]
+  methodes: [m-nuage-numworks, m-droite-numworks, m-prediction-numworks, m-r2-numworks, m-regression-excel, m-r2-excel]
+
+problemes: [p-logement, p-consommation, p-masses, p-argent, p-pointure, p-pression]
+programmes: [g-liste-notes, g-indicateurs, g-climatiseur]
+evaluations: [v-salaires, v-population]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

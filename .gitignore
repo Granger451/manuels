@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-apercu/
+*.brouillon.yml
+__pycache__/
+*.tmp
+
+# Terminale : gardée hors du dépôt public tant qu’elle n’est pas publiée
+contenu/tle/
+
+# Outils de travail : gardés hors du dépôt
+outils/

@@ -1,0 +1,62 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: derivee
+ordre: 30
+niveau: 1re
+motif: cube
+titre: Fonction dérivée et étude des variations d'une fonction
+groupements: A, B et C
+objectif: >-
+  Découvrir le nombre dérivé et la fonction dérivée, étudier les variations d'une fonction à partir du signe
+  de sa dérivée, et découvrir la fonction inverse.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, un exercice interactif, une vidéo de rappel et des inéquations à résoudre.
+preparation:
+  - titre: Je trouve le coefficient directeur d'une droite
+    lien: https://learningapps.org/display?v=p0xai3ox325
+  - titre: Je résous une inéquation de degré 1 (rappel en vidéo)
+    lien: https://www.youtube.com/watch?v=POjZ14LyJ-I
+  - fiche: prep-inequations
+
+etapes:
+  - id: etape-1
+    titre: Déterminer le nombre dérivé
+    resume: La pente de la tangente en un point, lue sur un graphique ou avec GeoGebra.
+    motif: affine
+    activites: [a-vtt]
+    retenir: [c-nombre-derive, c-equation-tangente]
+    exercices: [e-nombre-derive, e-nombre-derive-graphique, e-langage, e-tangente-graphique, e-equation-tangente]
+  - id: etape-2
+    titre: Déterminer la fonction dérivée
+    resume: Associer à chaque point le nombre dérivé, puis utiliser les formules de dérivation.
+    motif: derivee
+    activites: [a-voiture]
+    retenir: c-fonctions-derivees
+    exercices: [e-deriver, e-derivees-nombres, e-derivees-tangentes]
+  - id: etape-3
+    titre: Étudier les variations d'une fonction
+    resume: Le signe de la dérivée donne le sens de variation, puis les extremums.
+    motif: quadratique
+    activites: [a-basket]
+    retenir: [c-variations, c-extremum]
+    methodes: [m-etude-fonction]
+    exercices: [e-variations-graphique, e-variations-algebrique, e-etude-fonction]
+  - id: etape-4
+    titre: Étudier la fonction inverse
+    resume: La fonction 1/x, sa dérivée, ses variations et sa courbe, l'hyperbole.
+    motif: logarithmique
+    activites: [a-livraison]
+    retenir: c-fonction-inverse
+    exercices: [e-derivees-inverse, e-etude-inverse]
+
+memo:
+  connaissances: [c-nombre-derive, c-equation-tangente, c-fonctions-derivees, c-signe-graphique, c-signe-algebrique, c-variations, c-extremum, c-fonction-inverse]
+  methodes: [m-coef-graphique, m-equation-tangente, m-etude-fonction]
+
+problemes: [p-entretien, p-eclairage, p-gateaux, p-benefice]
+programmes: [g-tangente]
+evaluations: [v-carriere, v-eau]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

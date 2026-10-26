@@ -1,0 +1,62 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: probabilites
+ordre: 70
+niveau: 1re
+motif: arbre
+titre: Probabilités
+groupements: A, B et C
+objectif: >-
+  Utiliser les probabilités pour modéliser des situations concrètes, à l'aide de tableaux croisés d'effectifs
+  et du vocabulaire des ensembles.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, un rappel de vocabulaire et deux exercices interactifs.
+preparation:
+  - fiche: prep-vocabulaire
+  - titre: Je calcule des probabilités simples
+    lien: https://learningapps.org/display?v=pjpvxhqcc25
+  - titre: Je connais les formes d'écriture d'une probabilité
+    lien: https://learningapps.org/display?v=p017pjpf525
+
+etapes:
+  - id: etape-1
+    titre: Calculer la probabilité d'un événement contraire
+    resume: La probabilité que l'événement ne se réalise pas, pour décider d'un surbooking.
+    motif: arbre
+    activites: [a-hotel-1, a-hotel-2]
+    retenir: c-contraire
+    exercices: [e-jetons, e-huit-cartes, e-tombola, e-contraire, e-trouver-contraire]
+  - id: etape-2
+    titre: Intersection et réunion de deux événements
+    resume: "« A et B », « A ou B » : les issues communes, les issues de l'un ou de l'autre."
+    motif: arbre-totales
+    activites: [a-cartes]
+    retenir: c-intersection-reunion
+    exercices: [e-ensembles, e-notation-ensembles, e-urne]
+  - id: etape-3
+    titre: Construire et exploiter un tableau croisé d'effectifs
+    resume: Ranger les effectifs selon deux critères, puis lire les probabilités dans le tableau.
+    motif: amortissement
+    activites: [a-restaurant, a-supermarche]
+    retenir: c-tableau-croise
+    methodes: [m-tableau-croise, m-intersection-tableau, m-reunion-tableau]
+    exercices: [e-tableau-croise, e-sports, e-colis]
+  - id: etape-4
+    titre: Fréquences et probabilités conditionnelles
+    resume: La probabilité d'un événement quand on sait déjà qu'un autre est réalisé.
+    motif: arbre-independance
+    activites: [a-mobilite]
+    retenir: [c-frequences-conditionnelles, c-conditionnelles]
+    exercices: [e-tri]
+
+memo:
+  connaissances: [c-experience, c-probabilite, c-contraire, c-intersection-reunion, c-tableau-croise, c-frequences-conditionnelles, c-conditionnelles]
+  methodes: [m-tableau-croise, m-intersection-tableau, m-reunion-tableau]
+
+problemes: [p-telephonie, p-pantalons, p-permis]
+programmes: [g-double-six, g-boulangerie]
+evaluations: [v-tshirts, v-teletravail]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

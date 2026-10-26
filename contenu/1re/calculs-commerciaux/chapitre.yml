@@ -1,0 +1,65 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: commerciaux
+ordre: 40
+niveau: 1re
+motif: cube-extremums
+titre: Calculs commerciaux
+groupements: C
+objectif: >-
+  Réinvestir, dans des situations de calculs commerciaux (coût de production, coût moyen, coût marginal, résultat),
+  la dérivation et la fonction inverse.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, une recommandation, un rappel de calcul littéral et trois exercices interactifs.
+preparation:
+  - fiche: prep-recommandations
+  - fiche: prep-calcul-litteral
+  - titre: J'associe fonctions polynômes et dérivées
+    lien: https://learningapps.org/2221668
+  - titre: J'associe fonctions et tableaux de signes
+    lien: https://learningapps.org/3863829
+  - titre: Je calcule des images
+    lien: https://learningapps.org/display?v=p302zxc5c25
+
+etapes:
+  - id: etape-1
+    titre: Calculer un coût de production
+    resume: Modéliser un coût par une fonction et chercher la production qui le rend minimal.
+    motif: quadratique
+    activites: [a-bijoux]
+    retenir: c-cout-production
+    exercices: [e-deriver, e-cout-production, e-carnets, e-tasses]
+  - id: etape-2
+    titre: Calculer un coût moyen
+    resume: Diviser le coût par la quantité produite, puis étudier la fonction obtenue.
+    motif: cube-extremums
+    activites: [a-jouets]
+    retenir: c-cout-moyen
+    exercices: [e-derivee-inverse, e-porte-cles]
+  - id: etape-3
+    titre: Calculer un coût marginal
+    resume: Le coût d'une unité de plus, et son approximation par le nombre dérivé.
+    motif: derivee
+    activites: [a-skateboard]
+    retenir: [c-cout-marginal, c-cout-marginal-derive]
+    methodes: [m-inequation-numworks, m-inequation-geogebra]
+    exercices: [e-tote-bags]
+  - id: etape-4
+    titre: Déterminer et interpréter un résultat
+    resume: Comparer chiffre d'affaires et coût pour savoir si l'on fait un bénéfice ou une perte.
+    motif: affine
+    activites: [a-tshirts]
+    retenir: c-resultat
+    exercices: [e-benefices, e-bon-appetit, e-vocabulaire]
+
+memo:
+  connaissances: [c-cout-production, c-cout-moyen, c-cout-marginal, c-cout-marginal-derive, c-cout-marginal-graphique, c-resultat]
+  methodes: [m-tracer-numworks, m-tracer-geogebra, m-signe-derivee, m-signes-graphique, m-extremum-numworks, m-inequation, m-inequation-numworks, m-inequation-geogebra]
+
+problemes: [p-festival, p-gourdes, p-voyage]
+programmes: [g-sacs]
+evaluations: [v-meubles, v-bougies]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

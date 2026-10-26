@@ -1,0 +1,63 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: suites-arith
+ordre: 100
+niveau: 1re
+motif: suite
+titre: Suites numériques
+groupements: A, B et C
+objectif: >-
+  Utiliser un nouvel outil de modélisation, les suites : générer leurs termes, étudier leur sens de variation
+  et additionner les termes d'une suite arithmétique.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, trois exercices interactifs.
+preparation:
+  - titre: Je reconnais un nombre entier
+    lien: https://learningapps.org/40156483
+  - titre: J'associe les fonctions à leurs valeurs
+    lien: https://learningapps.org/40156679
+  - titre: Je complète des séquences de nombres
+    lien: https://learningapps.org/40394727
+
+etapes:
+  - id: etape-1
+    titre: Découvrir les suites numériques
+    resume: Des fonctions qui ne prennent que des nombres entiers, et leurs représentations.
+    motif: suite
+    activites: [a-trottinette]
+    retenir: [c-suite, c-representer]
+    methodes: [m-tracer-explicite]
+  - id: etape-2
+    titre: Découvrir les suites arithmétiques
+    resume: On ajoute toujours le même nombre, la raison, pour passer d'un terme au suivant.
+    motif: affine
+    activites: [a-observation]
+    retenir: [c-arithmetique, c-recurrence]
+    methodes: [m-terme, m-variations]
+    exercices: [e-reconnaitre, e-representations, e-raison, e-terme-formule, e-variations]
+  - id: etape-3
+    titre: Tracer une suite arithmétique
+    resume: Définir la suite par récurrence sur la calculatrice et lire ses termes.
+    motif: amortissement
+    activites: [a-parking]
+    methodes: [m-tracer-recurrence]
+    exercices: [e-terme-graphique]
+  - id: etape-4
+    titre: Calculer la somme des termes d'une suite
+    resume: Additionner les termes d'une suite arithmétique, à la calculatrice ou avec la formule.
+    motif: somme
+    activites: [a-squats, a-pignon]
+    methodes: [m-somme-numworks, m-somme-formule]
+    exercices: [e-somme-formule, e-somme-numworks]
+
+memo:
+  connaissances: [c-suite, c-representer, c-arithmetique, c-recurrence]
+  methodes: [m-tracer-explicite, m-tracer-recurrence, m-terme, m-variations, m-somme-numworks, m-somme-formule]
+
+problemes: [p-marathon, p-fahrenheit, p-essence, p-odeon, p-arbres, p-gauss, p-borie, p-escalier, p-voyager]
+programmes: [g-generateur, g-bain, g-piscine]
+evaluations: [v-camion, v-abonnement]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

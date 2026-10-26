@@ -1,0 +1,57 @@
+titre: Boîte à outils
+objectif: Les fiches pour utiliser la calculatrice, le tableur, GeoGebra et Python, quel que soit le chapitre.
+parties:
+- id: numworks
+  titre: Calculatrice NumWorks
+  resume: Statistiques, équations, fonctions.
+  groupes:
+  - titre: Prise en main
+    fiches:
+    - o-nw-interface
+    - o-nw-tutos
+  - titre: Statistiques
+    fiches:
+    - o-nw-stats
+    - o-nw-boite
+    - o-nw-modelisation
+  - titre: Équations
+    fiches:
+    - o-nw-equation
+    - o-nw-systeme
+    - o-nw-systeme-grapheur
+  - titre: Fonctions
+    fiches:
+    - o-nw-fonction
+    - o-nw-etudier
+- id: tableur
+  titre: Tableur
+  resume: Formules, fonctions utiles, graphiques, modélisation.
+  groupes:
+  - titre: Les bases
+    fiches:
+    - o-tab-copier
+    - o-tab-decimales
+  - titre: Fonctions utiles
+    fiches:
+    - o-tab-nbsi
+    - o-tab-alea
+  - titre: Graphiques et modélisation
+    fiches:
+    - o-tab-graphique
+    - o-tab-personnaliser
+    - o-tab-modelisation
+- id: geogebra
+  titre: GeoGebra
+  resume: Curseurs, intersections, figures en 3D.
+  groupes:
+  - fiches:
+    - o-gg-curseur
+    - o-gg-intersection
+    - o-gg-cylindre
+- id: python
+  titre: Python
+  resume: Les bases du langage et l'environnement Capytale.
+  groupes:
+  - fiches:
+    - o-py-bases
+    - o-py-capytale

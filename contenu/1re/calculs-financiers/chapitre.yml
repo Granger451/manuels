@@ -1,0 +1,51 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: financiers
+ordre: 50
+niveau: 1re
+motif: affine
+titre: Calculs financiers
+groupements: C
+objectif: >-
+  Étudier des placements à intérêt simple et réinvestir les suites arithmétiques : capital disponible,
+  valeur acquise, taux annuel, mensuel, par quinzaine ou journalier.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, une recommandation, un rappel de vocabulaire et trois exercices interactifs.
+preparation:
+  - fiche: prep-recommandations
+  - fiche: prep-vocabulaire
+  - titre: Je revois le vocabulaire sur les placements financiers
+    lien: https://learningapps.org/display?v=pg5m0avfj24
+  - titre: J'écris des pourcentages sous forme décimale
+    lien: https://learningapps.org/display?v=pa9xstxd525
+  - titre: Je calcule la quantité d'un pourcentage
+    lien: https://learningapps.org/display?v=pfeodozc525
+
+etapes:
+  - id: etape-1
+    titre: Calculer un capital à intérêt simple
+    resume: Chaque année, les mêmes intérêts s'ajoutent, et le capital suit une suite arithmétique.
+    motif: affine
+    activites: [a-livret-jeune]
+    retenir: [c-interet-simple, c-capital-disponible]
+    exercices: [e-placement-5-ans, e-ldd]
+  - id: etape-2
+    titre: Déterminer un taux périodique
+    resume: Passer d'un taux annuel à un taux mensuel, par quinzaine ou journalier, pour un déblocage anticipé.
+    motif: somme
+    activites: [a-participation]
+    retenir: c-taux-periodique
+    methodes: [m-taux-periodique]
+    exercices: [e-taux-periodique, e-plan-epargne, e-commercant, e-interets-journaliers, e-deblocage]
+
+memo:
+  connaissances: [c-interet-simple, c-capital-disponible, c-taux-periodique]
+  methodes: [m-formule-interet, m-suite-numworks, m-taux-periodique, m-taux-mensuel-tableau]
+
+problemes: [p-sana, p-francoise, p-photovoltaique]
+programmes: [g-prime]
+evaluations: [v-epargne-durable, v-epargne-projet]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.

@@ -1,0 +1,63 @@
+# Carte du chapitre : c'est ici qu'on décide ce qui va dans chaque étape.
+code: trigonometrie
+ordre: 110
+niveau: 1re
+motif: sinus
+titre: Trigonométrie
+groupements: A et B
+objectif: >-
+  Découvrir les outils de la trigonométrie, qui permettent de modéliser des phénomènes périodiques,
+  en lien avec les sciences physiques.
+objectifs: objectifs
+
+preparation_intro: Avant de commencer, un rappel sur le périmètre d'un disque et deux exercices interactifs.
+preparation:
+  - fiche: prep-perimetre
+  - titre: Je lis les coordonnées d'un point dans un repère
+    lien: https://learningapps.org/display?v=pj99z90gk25
+  - titre: Je calcule la circonférence d'un cercle
+    lien: https://learningapps.org/display?v=prxb2x0vc25
+
+etapes:
+  - id: etape-1
+    titre: "Mesurer un angle : degrés et radians"
+    resume: La longueur de l'arc sur le cercle de rayon 1 donne la mesure de l'angle en radians.
+    motif: fresnel
+    activites: [a-bassin]
+    retenir: r-angle
+    methodes: [m-convertir]
+    exercices: [e-associer, e-convertir, e-placer]
+  - id: etape-2
+    titre: Lire le cosinus et le sinus sur le cercle trigonométrique
+    resume: L'abscisse et l'ordonnée du point du cercle associé à l'angle.
+    motif: vecteur
+    activites: [a-embrayage]
+    retenir: r-cercle
+    methodes: [m-lecture-cercle, m-numworks]
+    exercices: [e-utiliser-cercle, e-se-reperer, e-cercle, e-lecture-cercle, e-relations]
+  - id: etape-3
+    titre: Représenter la fonction sinus
+    resume: Une courbe qui se répète, pour modéliser un mouvement qui oscille.
+    motif: sinus
+    activites: [a-ventilateur]
+    retenir: r-sinus
+    exercices: [e-satellite]
+  - id: etape-4
+    titre: Représenter la fonction cosinus
+    resume: La même sinusoïde, décalée d'un quart de période.
+    motif: sinus
+    activites: [a-ponceuse]
+    retenir: r-sinus-cosinus
+    exercices: [e-cosinus]
+
+memo:
+  connaissances: [c-radian, c-cercle, c-cosinus-sinus, c-valeurs, c-opposes, c-supplementaires, c-complementaires, c-fonction-sinus, c-fonction-cosinus]
+  methodes: [m-convertir, m-lecture-cercle, m-numworks]
+
+problemes: [p-logo, p-moyeu, p-piano]
+programmes: [g-convertir, g-courbes]
+evaluations: [v-poulailler, v-brosse]
+
+enseignant:
+  a_completer:
+    - Les images n'ont pas encore de texte alternatif détaillé pour les lecteurs d'écran.
